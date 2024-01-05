@@ -1,4 +1,4 @@
-# Translation Machine
+# Story Telling App
 
 Django story Telling App from Text or PDF File
 
