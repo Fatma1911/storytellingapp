@@ -1,0 +1,16 @@
+<!-- stories/templates/stories/home.html -->
+{% extends 'stories/base.html' %}
+
+{% load custom_filters %}
+
+{% block title %}Storytelling - Home{% endblock %}
+
+{% block content %}
+    <h1 class="mt-4">Storytelling</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Generate Audio</button>
+</form>
+
+{% endblock %}
